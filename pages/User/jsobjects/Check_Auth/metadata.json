@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "675160867f806e6071e75023_7f53b958-9af5-4d05-8db9-8c1265dfdfad",
+  "id": "User_Check_Auth",
+  "unpublishedCollection": {
+    "name": "Check_Auth",
+    "pageId": "User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
