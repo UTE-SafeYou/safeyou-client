@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "EMERGENCY",
+  "defaultOptionValue": "HIGH",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 26,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Khẩn cấp\",\n    \"code\": \"EMERGENCY\"\n  },\n  {\n    \"name\": \"Không khẩn cấp\",\n    \"code\": \"NORMAL\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Khẩn cấp\",\n    \"code\": \"HIGH\"\n  },\n  {\n    \"name\": \"Cần sắp xếp giải quyết\",\n    \"code\": \"MEDIUM\"\n  },\n\t  {\n    \"name\": \"Không khẩn cấp\",\n    \"code\": \"LOW\"\n  }\n\t\n]",
   "topRow": 18,
   "type": "SELECT_WIDGET",
   "version": 1,

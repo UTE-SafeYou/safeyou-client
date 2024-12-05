@@ -10,12 +10,7 @@
         "title": {{txtTieuDe.text}},
         "content": {{txtChiTiet.text}},
         "report_type": {{slReportType.selectedOptionLabel}},
-        "urgency": {{slUrgency.selectedOptionLabel}},
-        "meta_data": {
-            "affected_buildings": ["Block A", "Block B"],
-            "estimated_affected_households": 50,
-            "reported_time": "2024-02-20T10:30:00Z"
-        }
+        "urgency": {{slUrgency.selectedOptionValue}}
     }
 	
 }

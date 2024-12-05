@@ -11,18 +11,13 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t \"address\": {\n        \"street_number\": {{txtSoNha.text}},\n        \"street\":{{txtDuong.text}},\n        \"ward\": {{txtPhuong.text}},\n        \"district\": {{txtQuan.text}},\n        \"city\": {{txtThanhPho.text}}\n    },\n    \"report\": {\n        \"title\": {{txtTieuDe.text}},\n        \"content\": {{txtChiTiet.text}},\n        \"report_type\": {{slReportType.selectedOptionLabel}},\n        \"urgency\": {{slUrgency.selectedOptionLabel}},\n        \"meta_data\": {\n            \"affected_buildings\": [\"Block A\", \"Block B\"],\n            \"estimated_affected_households\": 50,\n            \"reported_time\": \"2024-02-20T10:30:00Z\"\n        }\n    }\n\t\n}",
+      "body": "{\n\t \"address\": {\n        \"street_number\": {{txtSoNha.text}},\n        \"street\":{{txtDuong.text}},\n        \"ward\": {{txtPhuong.text}},\n        \"district\": {{txtQuan.text}},\n        \"city\": {{txtThanhPho.text}}\n    },\n    \"report\": {\n        \"title\": {{txtTieuDe.text}},\n        \"content\": {{txtChiTiet.text}},\n        \"report_type\": {{slReportType.selectedOptionLabel}},\n        \"urgency\": {{slUrgency.selectedOptionValue}}\n    }\n\t\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3ZGFxbWZxamFjY2lqaHJrYmZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI5NDEyNzIsImV4cCI6MjA0ODUxNzI3Mn0.bpDrWBpWfkf4yfeUJUFq4mdHE145BPolSOyoLbk2ZPM"
-        }
-      ],
+      "headers": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
