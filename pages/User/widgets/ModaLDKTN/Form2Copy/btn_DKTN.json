@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "uwoapbxbc8",
+  "leftColumn": 21,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{register_tobe_volunteer.run().then(() => {\n  postWindowMessage('Đăng ký thành công! 🤗', \"window\", \"*\");\n  postWindowMessage('Chào mừng gia nhập Cộng đồng Tình nguyện viên của SAFEU 💐', \"window\", \"*\");\n}).catch(() => {\n  postWindowMessage('Đăng ký thất bại, vui lòng thử lại sau 😓', \"window\", \"*\");\n});}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentId": "kbcm949lq2",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 37,
+  "text": "Đăng ký",
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "o0j1qv94xf",
+  "widgetName": "btn_DKTN"
+}

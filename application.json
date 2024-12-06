@@ -18,8 +18,12 @@
   "icon": "chinese-remnibi",
   "pages": [
     {
-      "id": "Page1",
+      "id": "User",
       "isDefault": true
+    },
+    {
+      "id": "Login",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
