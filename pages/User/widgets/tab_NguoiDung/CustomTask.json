@@ -1,0 +1,66 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 113,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "fforinh71g",
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 123,
+  "originalTopRow": 46,
+  "parentColumnSpace": 18.183616638183594,
+  "parentId": "a507wpbmqz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": "@charset \"UTF-8\";\n.accept-button {\n  margin-top: 10px;\n  background-color: hotpink;\n  align-self: flex-start; /* Căn nút lên phía trên */\n}\n\n.task-info {\n  max-width: 400px; /* Giới hạn chiều rộng tối đa là 20px */\n  word-wrap: break-word; /* Cho phép từ dài không bị tràn ra ngoài */\n  overflow-wrap: break-word; /* Đảm bảo rằng từ dài sẽ được bẻ dòng khi cần thiết */\n  white-space: normal; /* Cho phép văn bản xuống dòng tự nhiên */\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<title>Document</title>\n\t</head>\n\t<body>\n\t\t<div id=\"root\"></div>\n\t</body>\n</html>\n",
+    "js": "import React, { useEffect, useState } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\nfunction App() {\n  // Hàm lấy danh sách tasks từ API\n  async function getTasks() {\n    try {\n      const response = await fetch('https://zwdaqmfqjaccijhrkbfl.supabase.co/rest/v1/task?select=*,address(*)', {\n        method: \"GET\",\n        headers: {\n          'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3ZGFxbWZxamFjY2lqaHJrYmZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI5NDEyNzIsImV4cCI6MjA0ODUxNzI3Mn0.bpDrWBpWfkf4yfeUJUFq4mdHE145BPolSOyoLbk2ZPM',\n          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3ZGFxbWZxamFjY2lqaHJrYmZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI5NDEyNzIsImV4cCI6MjA0ODUxNzI3Mn0.bpDrWBpWfkf4yfeUJUFq4mdHE145BPolSOyoLbk2ZPM',\n          'Content-Type': 'application/json'\n        }\n      });\n\n      // Chuyển đổi response thành JSON và trả về dữ liệu\n      const data = await response.json();\n      return data;\n    } catch (error) {\n      console.error('Error:', error);\n      throw error; // Ném lỗi để xử lý ở nơi gọi hàm\n    }\n  }\n  const [tasks, setTasks] = useState([]);\n\n  // Khi component được render, load dữ liệu tasks\n  useEffect(() => {\n    loadTasks();\n  }, []);\n\n  // Hàm load tasks và cập nhật state\n  const loadTasks = async () => {\n    const tasksData = await getTasks();\n    setTasks(tasksData);\n  };\n\n  // Hàm xử lý khi người dùng nhấn vào nút \"Nhận nhiệm vụ\"\n  const handleAcceptTask = taskId => {\n    alert(`Bạn đã nhận nhiệm vụ có ID: ${taskId}`);\n    // Thực hiện các thao tác khác sau khi nhận nhiệm vụ, ví dụ: cập nhật trạng thái nhiệm vụ\n  };\n  return /*#__PURE__*/React.createElement(\"div\", null, tasks.length > 0 ? tasks.map((task, index) => /*#__PURE__*/React.createElement(Card, {\n    key: index,\n    title: `Tên nhiệm vụ: ${task.title}`\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"task-info\"\n  }, /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"\\u0110\\u1ECBa \\u0111i\\u1EC3m:\"), \" \", task.address.street_number, \", \", task.address.street, \", \", task.address.ward, \", \", task.address.district, \", \", task.address.city, \" \"), /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"M\\u1EE9c \\u0111\\u1ED9 c\\u1EA5p thi\\u1EBFt:\"), \" \", task.urgency), /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"M\\xF4 t\\u1EA3:\"), \" \", task.description), /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"K\\u1EF9 n\\u0103ng y\\xEAu c\\u1EA7u:\"), \" \", task.required_skills), /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"S\\u1ED1 l\\u01B0\\u1EE3ng:\"), \" \"), /*#__PURE__*/React.createElement(\"p\", null, /*#__PURE__*/React.createElement(\"strong\", null, \"S\\u1ED1 ng\\u01B0\\u1EDDi \\u0111\\xE3 nh\\u1EADn:\")), /*#__PURE__*/React.createElement(Button, {\n    className: \"accept-button\",\n    type: \"primary\",\n    onClick: () => handleAcceptTask(task.id),\n    style: {\n      marginTop: 10\n    }\n  }, \"Nh\\u1EADn nhi\\u1EC7m v\\u1EE5\")))) : /*#__PURE__*/React.createElement(\"p\", null, \"Ch\\u01B0a c\\xF3 nhi\\u1EC7m v\\u1EE5 n\\xE0o c\\u1EA3. B\\u1EA1n h\\xE3y quay l\\u1EA1i sau nh\\xE9!\"));\n}\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 39,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".accept-button {\n  margin-top: 10px;\n  background-color: hotpink;\n  align-self: flex-start; /* Căn nút lên phía trên */\n}\n\n\n.task-info {\n  max-width: 400px;         /* Giới hạn chiều rộng tối đa là 20px */\n  word-wrap: break-word;   /* Cho phép từ dài không bị tràn ra ngoài */\n  overflow-wrap: break-word; /* Đảm bảo rằng từ dài sẽ được bẻ dòng khi cần thiết */\n  white-space: normal;     /* Cho phép văn bản xuống dòng tự nhiên */\n}",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<title>Document</title>\n\t</head>\n\t<body>\n\t\t<div id=\"root\"></div>\n\t</body>\n</html>\n",
+    "js": "import React, { useEffect, useState } from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\n\nfunction App() {\n\t// Hàm lấy danh sách tasks từ API\n\tasync function getTasks() {\n\t\ttry {\n\t\t\tconst response = await fetch('https://zwdaqmfqjaccijhrkbfl.supabase.co/rest/v1/task?select=*,address(*)', {\n\t\t\t\tmethod: \"GET\",\n\t\t\t\theaders: {\n\t\t\t\t\t'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3ZGFxbWZxamFjY2lqaHJrYmZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI5NDEyNzIsImV4cCI6MjA0ODUxNzI3Mn0.bpDrWBpWfkf4yfeUJUFq4mdHE145BPolSOyoLbk2ZPM',\n\t\t\t\t\t'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3ZGFxbWZxamFjY2lqaHJrYmZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI5NDEyNzIsImV4cCI6MjA0ODUxNzI3Mn0.bpDrWBpWfkf4yfeUJUFq4mdHE145BPolSOyoLbk2ZPM',\n\t\t\t\t\t'Content-Type': 'application/json'\n\t\t\t\t}\n\t\t\t});\n\n\t\t\t// Chuyển đổi response thành JSON và trả về dữ liệu\n\t\t\tconst data = await response.json();\n\t\t\treturn data;\n\t\t} catch (error) {\n\t\t\tconsole.error('Error:', error);\n\t\t\tthrow error;  // Ném lỗi để xử lý ở nơi gọi hàm\n\t\t}\n\t}\n\n\tconst [tasks, setTasks] = useState([]);\n\n\t// Khi component được render, load dữ liệu tasks\n\tuseEffect(() => {\n\t\tloadTasks();\n\t}, []);\n\n\t// Hàm load tasks và cập nhật state\n\tconst loadTasks = async () => {\n\t\tconst tasksData = await getTasks();\n\t\tsetTasks(tasksData);\n\t};\n\n\t// Hàm xử lý khi người dùng nhấn vào nút \"Nhận nhiệm vụ\"\n\tconst handleAcceptTask = (taskId) => {\n\t\talert(`Bạn đã nhận nhiệm vụ có ID: ${taskId}`);\n\t\t// Thực hiện các thao tác khác sau khi nhận nhiệm vụ, ví dụ: cập nhật trạng thái nhiệm vụ\n\t};\n\n\treturn (\n\n\t\t<div>\n\t\t{/* Kiểm tra nếu có task để hiển thị */}\n\t\t{tasks.length > 0 ? (\n\t\ttasks.map((task, index) => (\n\t\t<Card key={index} title={`Tên nhiệm vụ: ${task.title}`}>\n\t\t<div className=\"task-info\">\n\t\t<p><strong>Địa điểm:</strong> {task.address.street_number}, {task.address.street}, {task.address.ward}, {task.address.district}, {task.address.city} </p>\n\t\t\t\t\t\t<p><strong>Mức độ cấp thiết:</strong> {task.urgency}</p>\n            <p><strong>Mô tả:</strong> {task.description}</p>\n            <p><strong>Kỹ năng yêu cầu:</strong> {task.required_skills}</p>\n            <p><strong>Số lượng:</strong> </p>\n\t\t\t\t\t\t<p><strong>Số người đã nhận:</strong></p>\n\t\t\t\t\t\t<Button className= \"accept-button\"\n              type=\"primary\" \n              onClick={() => handleAcceptTask(task.id)} \n              style={{ marginTop: 10 }}\n            >\n              Nhận nhiệm vụ\n            </Button>\n\t\t</div>\n\n          </Card>\n        ))\n      ) : (\n        <p>Chưa có nhiệm vụ nào cả. Bạn hãy quay lại sau nhé!</p>\n      )}\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n\treactDom.render(<App />, document.getElementById('root'));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "jeopgfl4k7",
+  "widgetName": "CustomTask"
+}

@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 75,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "ssyrxbg1xi",
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 105,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 75,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 19.1904296875,
+  "parentId": "a507wpbmqz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "srcDoc": {
+    "css": "#carousel {\n  width: 100%;\n  margin: 0 auto;\n  border-radius: var(--appsmith-theme-borderRadius);\n  overflow: hidden;\n}\n\n.slick-slide img {\n  width: 100%;\n  border-radius: var(--appsmith-theme-borderRadius);\n}\n\n.slick-prev:before, .slick-next:before {\n  color: var(--appsmith-theme-primaryColor);\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css\"/>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css\"/>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js\"></script>\n<div id=\"root\"></div>",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nfunction ImageCarousel() {\n  const img1 = 'https://doanthanhnien.vn/Content/uploads/images/132796880202440546_%C4%90%E1%BB%99i%20t%C3%ACnh%20nguy%E1%BB%87n%20vi%C3%AAn..jpg';\n  const img2 = 'https://baothainguyen.vn/file/e7837c027f6ecd14017ffa4e5f2a0e34/092024/4-cuu_tro_5_20240910161331_20240911151944.jpg';\n  const img3 = 'https://doanthanhnien.vn/Content/uploads/images/132817946166701841_%C4%90.c%20Nguy%E1%BB%85n%20Th%C3%A0nh%20Trung%20-%20Ph%C3%B3%20B%C3%AD%20th%C6%B0%20Th%C6%B0%E1%BB%9Dng%20tr%E1%BB%B1c%20T%E1%BB%89nh%20%C4%91o%C3%A0n,%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%99i%20LHTN%20Vi%E1%BB%87t%20Nam%20t%E1%BB%89nh%20trao%20qu%C3%A0%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%A2n%20b%E1%BB%8B%20%E1%BA%A3nh%20h%C6%B0%E1%BB%9Fng%20b%E1%BB%9Fi%20l%C5%A9%20l%E1%BB%A5t.jpg';\n  const img4 = 'https://images.baodantoc.vn/uploads/2021/9/5/root41/Nh%E1%BB%AFng%20t%C3%ACnh%20nguy%E1%BB%87n%20vi%C3%AAn%20g%C3%B3p%20s%E1%BB%A9c%20t%E1%BA%A1i%20b%E1%BA%BFp%20%C4%83n%20ngh%C4%A9a%20t%C3%ACnh%20trong%20m%C3%B9a%20d%E1%BB%8Bch.jpg';\n  const img5 = 'https://image.tienphong.vn/w1000/Uploaded/2024/tccbzqvp/2024_09_11/tien-phong-bao-lu-so-311-4386.jpg';\n  const [images, setImages] = React.useState(appsmith.model.images || [img1, img2, img3, img4, img5]);\n  React.useEffect(() => {\n    appsmith.onModelChange((model, prevModel) => {\n      if (JSON.stringify(model.images) !== JSON.stringify(prevModel?.images)) {\n        setImages(model.images);\n      }\n    });\n\n    // Initialize the carousel\n    $('#carousel').slick({\n      autoplay: true,\n      autoplaySpeed: 3000,\n      dots: true,\n      arrows: true\n    });\n  }, []);\n  return /*#__PURE__*/React.createElement(\"div\", {\n    id: \"carousel\"\n  }, images.map((image, index) => /*#__PURE__*/React.createElement(\"div\", {\n    key: index\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: image,\n    alt: `Slide ${index + 1}`\n  }))));\n}\nappsmith.onReady(() => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(ImageCarousel, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 39,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "#carousel {\n  width: 100%;\n  margin: 0 auto;\n  border-radius: var(--appsmith-theme-borderRadius);\n  overflow: hidden;\n}\n\n.slick-slide img {\n  width: 100%;\n  border-radius: var(--appsmith-theme-borderRadius);\n}\n\n.slick-prev:before, .slick-next:before {\n  color: var(--appsmith-theme-primaryColor);\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css\"/>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css\"/>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js\"></script>\n<div id=\"root\"></div>",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport ReactDOM from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n\nfunction ImageCarousel() {\n\t const img1 = 'https://doanthanhnien.vn/Content/uploads/images/132796880202440546_%C4%90%E1%BB%99i%20t%C3%ACnh%20nguy%E1%BB%87n%20vi%C3%AAn..jpg';\n    const img2 = 'https://baothainguyen.vn/file/e7837c027f6ecd14017ffa4e5f2a0e34/092024/4-cuu_tro_5_20240910161331_20240911151944.jpg';\n    const img3 = 'https://doanthanhnien.vn/Content/uploads/images/132817946166701841_%C4%90.c%20Nguy%E1%BB%85n%20Th%C3%A0nh%20Trung%20-%20Ph%C3%B3%20B%C3%AD%20th%C6%B0%20Th%C6%B0%E1%BB%9Dng%20tr%E1%BB%B1c%20T%E1%BB%89nh%20%C4%91o%C3%A0n,%20Ch%E1%BB%A7%20t%E1%BB%8Bch%20H%E1%BB%99i%20LHTN%20Vi%E1%BB%87t%20Nam%20t%E1%BB%89nh%20trao%20qu%C3%A0%20cho%20ng%C6%B0%E1%BB%9Di%20d%C3%A2n%20b%E1%BB%8B%20%E1%BA%A3nh%20h%C6%B0%E1%BB%9Fng%20b%E1%BB%9Fi%20l%C5%A9%20l%E1%BB%A5t.jpg';\n    const img4 = 'https://images.baodantoc.vn/uploads/2021/9/5/root41/Nh%E1%BB%AFng%20t%C3%ACnh%20nguy%E1%BB%87n%20vi%C3%AAn%20g%C3%B3p%20s%E1%BB%A9c%20t%E1%BA%A1i%20b%E1%BA%BFp%20%C4%83n%20ngh%C4%A9a%20t%C3%ACnh%20trong%20m%C3%B9a%20d%E1%BB%8Bch.jpg';\n    const img5 = 'https://image.tienphong.vn/w1000/Uploaded/2024/tccbzqvp/2024_09_11/tien-phong-bao-lu-so-311-4386.jpg';\n  const [images, setImages] = React.useState(appsmith.model.images || [\n   img1, img2, img3, img4, img5\n  ]);\n\n  React.useEffect(() => {\n    appsmith.onModelChange((model, prevModel) => {\n      if (JSON.stringify(model.images) !== JSON.stringify(prevModel?.images)) {\n        setImages(model.images);\n      }\n    });\n\n    // Initialize the carousel\n    $('#carousel').slick({\n      autoplay: true,\n      autoplaySpeed: 3000,\n      dots: true,\n      arrows: true\n    });\n  }, []);\n\n  return (\n    <div id=\"carousel\">\n      {images.map((image, index) => (\n        <div key={index}>\n          <img src={image} alt={`Slide ${index + 1}`} />\n        </div>\n      ))}\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n  ReactDOM.render(<ImageCarousel />, document.getElementById('root'));\n});"
+  },
+  "version": 1,
+  "widgetId": "fvm7yjilqt",
+  "widgetName": "Custom3"
+}

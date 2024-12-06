@@ -10,7 +10,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 680,
+      "bottomRow": 700,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -95,7 +95,7 @@
       "widgetId": "nfbjjtdlmk"
     }
   },
-  "topRow": 38,
+  "topRow": 36,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "tg2vct4qag",

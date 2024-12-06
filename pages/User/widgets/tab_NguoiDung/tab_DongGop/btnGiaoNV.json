@@ -30,7 +30,7 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onClick": "{{Report.btnGiaoNVonClick();}}",
+  "onClick": "{{UserReport.run().then(() => {\n  showAlert('Gửi thành công', 'success');\n}).catch(() => {\n  showAlert('Gửi thất bại, vui lòng thử lại', 'error');\n});}}",
   "originalBottomRow": 64,
   "originalTopRow": 59,
   "parentColumnSpace": 11.04541015625,
