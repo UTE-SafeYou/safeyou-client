@@ -1,0 +1,5 @@
+SELECT * 
+FROM public.donation
+INNER JOIN public.address
+ON public.donation.address_id = public.address.address_id
+WHERE public.donation.role = 'RECEIVER';
