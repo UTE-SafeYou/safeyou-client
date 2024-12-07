@@ -1,0 +1,1 @@
+SELECT create_assignment({{appsmith.store.user_profile.id}}, {{tbTask.selectedRow.id}});
