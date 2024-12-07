@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 19,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -27,7 +27,7 @@
   "parentId": "t5nnh1p72i",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 36,
+  "rightColumn": 38,
   "searchTags": [
     "typography",
     "paragraph",
@@ -37,7 +37,7 @@
   "text": "Hãy trở thành thành nguyện viên để chung tay giúp đỡ đồng bào của chúng ta, bạn nhé!",
   "textAlign": "LEFT",
   "textColor": "#fce7f3",
-  "topRow": 10,
+  "topRow": 12,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,

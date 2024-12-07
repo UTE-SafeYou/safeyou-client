@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#ec4899",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 32,
+  "bottomRow": 35,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -59,7 +59,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "5m7may5ry7",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "parentColumnSpace": 14.0625,
@@ -67,7 +67,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 16,
-  "topRow": 18,
+  "topRow": 21,
   "type": "STATBOX_WIDGET",
   "widgetId": "gj829xdvbb",
   "widgetName": "Total_customerCopy2CopyCopy1"

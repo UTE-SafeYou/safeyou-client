@@ -1,0 +1,9 @@
+SELECT * 
+FROM public.assignment
+INNER JOIN public.task
+ON public.task.id= public.assignment.task_id
+INNER JOIN public.volunteerprofiles
+ON public.volunteerprofiles.id = public.assignment.volunteer_profile_id
+INNER JOIN public.address
+ON public.address.address_id= public.task.address_id
+WHERE public.volunteerprofiles.user_id = {{appsmith.store.user_profile.id}}

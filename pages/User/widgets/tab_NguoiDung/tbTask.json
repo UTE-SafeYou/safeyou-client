@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 120,
+  "bottomRow": 127,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -115,6 +115,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "isVisiblePagination"
     }
   ],
   "dynamicTriggerPathList": [
@@ -134,7 +137,7 @@
   "isVisible": true,
   "isVisibleDownload": true,
   "isVisibleFilters": false,
-  "isVisiblePagination": true,
+  "isVisiblePagination": "true",
   "isVisibleSearch": true,
   "key": "9tdi3diu8y",
   "label": "Data",
@@ -146,8 +149,8 @@
   "mobileTopRow": 39,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 120,
-  "originalTopRow": 77,
+  "originalBottomRow": 138,
+  "originalTopRow": 95,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a507wpbmqz",
   "parentRowSpace": 10,
@@ -221,7 +224,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "Nhậ",
+      "alias": "Nhận",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tbTask.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -246,7 +249,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Nhậ",
+      "label": "Nhận",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "onClick": "{{insertTaskForVolunteer.run().then(() => {\n  showAlert('thành công', 'success');\n}).catch(() => {\n  showAlert('thất bại', 'error');\n});}}",
@@ -535,10 +538,11 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "searchKey": "",
+  "serverSidePaginationEnabled": false,
   "tableData": "{{getAllTasks.data}}",
   "textSize": "0.875rem",
-  "topRow": 77,
-  "totalRecordsCount": 0,
+  "topRow": 84,
+  "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
