@@ -43,14 +43,14 @@
     "start_date",
     "task_status"
   ],
-  "columnUpdatedAt": 1733546718073,
+  "columnUpdatedAt": 1733570103527,
   "columnWidthMap": {
     "address": 185,
     "customColumn1": 77,
-    "description": 159,
-    "end_date": 183,
+    "description": 262,
+    "end_date": 182,
     "required_skills": 179,
-    "start_date": 109,
+    "start_date": 156,
     "title": 122,
     "urgency": 129
   },
@@ -149,11 +149,12 @@
   "mobileTopRow": 39,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 138,
-  "originalTopRow": 95,
+  "originalBottomRow": 128,
+  "originalTopRow": 85,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a507wpbmqz",
   "parentRowSpace": 10,
+  "primaryColumnId": "id",
   "primaryColumns": {
     "address": {
       "alias": "address",
@@ -252,9 +253,9 @@
       "label": "Nhận",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{insertTaskForVolunteer.run().then(() => {\n  showAlert('thành công', 'success');\n}).catch(() => {\n  showAlert('thất bại', 'error');\n});}}",
+      "onClick": "{{checkExistTaskItem.tbTaskprimaryColumnscustomColumn1onClick();}}",
       "originalId": "customColumn1",
-      "sticky": "",
+      "sticky": "left",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -263,7 +264,7 @@
     },
     "description": {
       "alias": "description",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
@@ -297,7 +298,7 @@
     },
     "end_date": {
       "alias": "end_date",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
@@ -467,7 +468,7 @@
     },
     "title": {
       "alias": "title",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
