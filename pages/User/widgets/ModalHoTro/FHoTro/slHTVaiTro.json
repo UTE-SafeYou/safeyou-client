@@ -52,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Người cho\",\n    \"code\": \"GIVER\"\n  },\n  {\n    \"name\": \"Người nhận\",\n    \"code\": \"RECIVER\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Người cho\",\n    \"code\": \"GIVER\"\n  },\n  {\n    \"name\": \"Người nhận\",\n    \"code\": \"RECEIVER\"\n  }\n]",
   "topRow": 5,
   "type": "SELECT_WIDGET",
   "version": 1,

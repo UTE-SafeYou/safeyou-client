@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "airplane",
   "isDefaultClickDisabled": true,
@@ -26,13 +30,14 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
+  "onClick": "{{createDonation.run().then(() => {\n  showAlert('Gửi thành công', 'success');\n}).catch(() => {\n  showAlert('Gửi thất bại', 'error');\n});}}",
   "originalBottomRow": 103,
   "originalTopRow": 98,
   "parentId": "xp21edfusq",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 39,
   "text": "Gửi",

@@ -1,0 +1,21 @@
+{
+	"address": {
+		"street_number": {{txtHTSoNha.text}},
+		"street": {{txtHTDuong.text}},
+		"ward": {{txtHTPhuong.text}},
+		"city": {{txtHTThanhPho.text}},
+		"district": {{txtHTQuan.text}}
+	},
+	"donation": {
+		"role": {{slHTVaiTro.selectedOptionValue}},
+		"fullname": {{txtHTTen.text}},
+		"email": {{txtHTEmail.text}},
+		"phonenumber": {{txtHTSDT.text}},
+		"cango": {{slHTDi.selectedOptionValue}},
+		"mask": {{txtHTSoNha.text}},
+		"rice": {{txtHTSoNha.text}},
+		"noodle":{{txtHTSoNha.text}},
+		"vegetable": {{txtHTSoNha.text}},
+		"meat": {{txtHTSoNha.text}}
+	}
+}
