@@ -3,13 +3,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#ec4899",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -24,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "b9rmgk9n8y",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "minWidth": 120,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 0,
@@ -42,7 +39,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 28,
+  "rightColumn": 29,
   "text": "Đăng nhập",
   "tooltip": "",
   "topRow": 17,

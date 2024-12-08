@@ -27,6 +27,6 @@
     "fullyQualifiedName": "checkExistTaskItem.tbTaskprimaryColumnscustomColumn1onClick",
     "name": "tbTaskprimaryColumnscustomColumn1onClick",
     "pageId": "User",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

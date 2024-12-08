@@ -28,7 +28,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{register_tobe_volunteer.run().then(() => {\n  postWindowMessage('Đăng ký thành công! 🤗', \"window\", \"*\");\n  postWindowMessage('Chào mừng gia nhập Cộng đồng Tình nguyện viên của SAFEU 💐', \"window\", \"*\");\n}).catch(() => {\n  postWindowMessage('Đăng ký thất bại, vui lòng thử lại sau 😓', \"window\", \"*\");\n});}}",
+  "onClick": "{{jsDangKyTN.btn_DKTNonClick();}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "kbcm949lq2",
