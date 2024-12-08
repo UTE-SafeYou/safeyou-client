@@ -40,6 +40,7 @@ export default {
 				// }
 			});
 			showAlert("Đăng nhập thành công", "success");
+			navigateTo("User");
 		}
 	}
 }

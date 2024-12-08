@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "0",
-  "bottomRow": 29,
+  "bottomRow": 31,
   "boxShadow": "none",
   "children": [
     {
@@ -77,7 +77,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "topRow": 0,
+  "topRow": 2,
   "type": "FORM_WIDGET",
   "widgetId": "qs6bec9ycn",
   "widgetName": "loginForm"

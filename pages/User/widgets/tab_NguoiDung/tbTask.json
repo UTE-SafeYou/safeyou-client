@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 128,
+  "bottomRow": 126,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -31,7 +31,6 @@
     }
   },
   "columnOrder": [
-    "customColumn1",
     "id",
     "title",
     "urgency",
@@ -40,9 +39,10 @@
     "address_id",
     "end_date",
     "start_date",
-    "task_status"
+    "task_status",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1733628350711,
+  "columnUpdatedAt": 1733652825102,
   "columnWidthMap": {
     "address": 185,
     "customColumn1": 77,
@@ -100,12 +100,6 @@
     },
     {
       "key": "primaryColumns.task_status.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -137,7 +131,7 @@
   "isVisibleSearch": true,
   "key": "9tdi3diu8y",
   "label": "Data",
-  "leftColumn": 2,
+  "leftColumn": 3,
   "minWidth": 450,
   "mobileBottomRow": 67,
   "mobileLeftColumn": 30,
@@ -145,8 +139,8 @@
   "mobileTopRow": 39,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 128,
-  "originalTopRow": 89,
+  "originalBottomRow": 126,
+  "originalTopRow": 87,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a507wpbmqz",
   "parentRowSpace": 10,
@@ -190,9 +184,6 @@
       "alias": "Nhận",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{tbTask.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{tbTask.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#ec4899",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "iconButton",
       "computedValue": "",
@@ -203,7 +194,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 10,
+      "index": 9,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
@@ -217,7 +208,7 @@
       "notation": "standard",
       "onClick": "{{checkExistTaskItem.tbTaskprimaryColumnscustomColumn1onClick();}}",
       "originalId": "customColumn1",
-      "sticky": "left",
+      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -499,12 +490,12 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "tableData": "{{getAllTasks.data}}",
   "textSize": "0.875rem",
-  "topRow": 89,
+  "topRow": 87,
   "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

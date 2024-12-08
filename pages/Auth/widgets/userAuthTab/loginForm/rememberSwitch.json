@@ -1,15 +1,11 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "accentColor": "#ec4899",
   "alignWidget": "LEFT",
   "animateLoading": true,
   "bottomRow": 17,
   "boxShadow": "none",
   "defaultSwitchState": true,
-  "dynamicBindingPathList": [
-    {
-      "key": "accentColor"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "isDisabled": false,
