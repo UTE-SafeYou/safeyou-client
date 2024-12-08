@@ -1,3 +1,0 @@
-{
-	"token": {{appsmith.store.access_token}} 
-}

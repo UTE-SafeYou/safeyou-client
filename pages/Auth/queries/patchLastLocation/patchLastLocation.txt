@@ -1,0 +1,5 @@
+{
+	"latitude": {{appsmith.store.lat}},
+	"longitude": {{appsmith.store.lon}},
+	"last_location": "SRID=4326;POINT({{appsmith.store.lon}} {{appsmith.store.lat}})"
+}
