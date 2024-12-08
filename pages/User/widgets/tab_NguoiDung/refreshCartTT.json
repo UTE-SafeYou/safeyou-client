@@ -1,0 +1,43 @@
+{
+  "accentColor": "#ec4899",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "s5dfjuahei",
+  "label": "Tự động tải lại bảng",
+  "labelPosition": "Left",
+  "labelTextColor": "#18181b",
+  "labelTextSize": "1rem",
+  "leftColumn": 50,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 50,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 40,
+  "needsErrorInfo": false,
+  "onChange": "{{refesh.startAutoRefresh();}}",
+  "parentColumnSpace": 19.1904296875,
+  "parentId": "a507wpbmqz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 42,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "b7b7mxk0bf",
+  "widgetName": "refreshCartTT"
+}
