@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6755338dfd51167a0308d98d_9e5139a7-5f25-4c8e-92a2-fc97b6ae6be4",
+  "id": "User_postService",
+  "unpublishedCollection": {
+    "name": "postService",
+    "pageId": "User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
