@@ -31,7 +31,7 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onClick": "{{login_user.run().then(() => {\n  showAlert('Chào mừng bạn quay trở lại 👋', 'success');\n}).catch(() => {\n  showAlert('Sai mật khẩu hoặc email', 'error');\n});}}",
+  "onClick": "{{login_user.run().then(() => {\n  showAlert('Chào mừng bạn quay trở lại 👋', 'success');\n  JSObject1.loginButtononClick();\n}).catch(() => {\n  showAlert('Sai mật khẩu hoặc email', 'error');\n});}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 10.4287109375,
