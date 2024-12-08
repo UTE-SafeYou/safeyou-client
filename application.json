@@ -25,11 +25,7 @@
       "isDefault": true
     },
     {
-      "id": "Login",
-      "isDefault": false
-    },
-    {
-      "id": "Page2",
+      "id": "Auth",
       "isDefault": false
     }
   ],
