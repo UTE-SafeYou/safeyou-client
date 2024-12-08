@@ -1,16 +1,15 @@
 {
-	 "address": {
-        "street_number": {{txtSoNha.text}},
-        "street":{{txtDuong.text}},
-        "ward": {{txtPhuong.text}},
-        "district": {{txtQuan.text}},
-        "city": {{txtThanhPho.text}}
-    },
-    "report": {
-        "title": {{txtTieuDe.text}},
-        "content": {{txtChiTiet.text}},
-        "report_type": {{slReportType.selectedOptionLabel}},
-        "urgency": {{slUrgency.selectedOptionValue}}
-    }
-	
+	"address": {
+		"city":{{slRPThanhPho.selectedOptionLabel}},
+		"district": {{slRPQuan.selectedOptionLabel}},
+		"ward": {{slRPXa.selectedOptionLabel}},
+		"street": {{txtRPDuong.text}}
+	},
+	"report": {
+		"title": {{txtTieuDe.text}},
+		"content": {{txtChiTiet.text}},
+		"report_type": {{slReportType.selectedOptionLabel}},
+		"urgency": {{slUrgency.selectedOptionValue}}
+	}
+
 }

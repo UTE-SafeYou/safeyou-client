@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 127,
+  "bottomRow": 128,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -36,14 +36,13 @@
     "title",
     "urgency",
     "description",
-    "address",
     "required_skills",
     "address_id",
     "end_date",
     "start_date",
     "task_status"
   ],
-  "columnUpdatedAt": 1733570103527,
+  "columnUpdatedAt": 1733628350711,
   "columnWidthMap": {
     "address": 185,
     "customColumn1": 77,
@@ -103,9 +102,6 @@
       "key": "primaryColumns.task_status.computedValue"
     },
     {
-      "key": "primaryColumns.address.computedValue"
-    },
-    {
       "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
@@ -150,46 +146,12 @@
   "needsErrorInfo": false,
   "onRowSelected": "",
   "originalBottomRow": 128,
-  "originalTopRow": 85,
+  "originalTopRow": 89,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a507wpbmqz",
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
-    "address": {
-      "alias": "address",
-      "allowCellWrapping": true,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{tbTask.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"address\"].street_number + ', ' + currentRow[\"address\"].street + ', ' + currentRow[\"address\"].ward + ',' + currentRow[\"address\"].city + ', ' + currentRow[\"address\"].district))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "address",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Địa điểm",
-      "notation": "standard",
-      "originalId": "address",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "address_id": {
       "alias": "address_id",
       "allowCellWrapping": false,
@@ -542,7 +504,7 @@
   "serverSidePaginationEnabled": false,
   "tableData": "{{getAllTasks.data}}",
   "textSize": "0.875rem",
-  "topRow": 84,
+  "topRow": 89,
   "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

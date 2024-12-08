@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t \"address\": {\n        \"street_number\": {{txtSoNha.text}},\n        \"street\":{{txtDuong.text}},\n        \"ward\": {{txtPhuong.text}},\n        \"district\": {{txtQuan.text}},\n        \"city\": {{txtThanhPho.text}}\n    },\n    \"report\": {\n        \"title\": {{txtTieuDe.text}},\n        \"content\": {{txtChiTiet.text}},\n        \"report_type\": {{slReportType.selectedOptionLabel}},\n        \"urgency\": {{slUrgency.selectedOptionValue}}\n    }\n\t\n}",
+      "body": "{\n\t\"address\": {\n\t\t\"city\":{{slRPThanhPho.selectedOptionLabel}},\n\t\t\"district\": {{slRPQuan.selectedOptionLabel}},\n\t\t\"ward\": {{slRPXa.selectedOptionLabel}},\n\t\t\"street\": {{txtRPDuong.text}}\n\t},\n\t\"report\": {\n\t\t\"title\": {{txtTieuDe.text}},\n\t\t\"content\": {{txtChiTiet.text}},\n\t\t\"report_type\": {{slReportType.selectedOptionLabel}},\n\t\t\"urgency\": {{slUrgency.selectedOptionValue}}\n\t}\n\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
