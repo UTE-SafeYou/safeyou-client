@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"address\": {\n\t\t\"street_number\": {{txtHTSoNha.text}},\n\t\t\"street\": {{txtHTDuong.text}},\n\t\t\"ward\": {{txtHTPhuong.text}},\n\t\t\"city\": {{txtHTThanhPho.text}},\n\t\t\"district\": {{txtHTQuan.text}}\n\t},\n\t\"donation\": {\n\t\t\"role\": {{slHTVaiTro.selectedOptionValue}},\n\t\t\"fullname\": {{txtHTTen.text}},\n\t\t\"email\": {{txtHTEmail.text}},\n\t\t\"phonenumber\": {{txtHTSDT.text}},\n\t\t\"cango\": {{slHTDi.selectedOptionValue}},\n\t\t\"mask\": {{txtHTSoNha.text}},\n\t\t\"rice\": {{txtHTSoNha.text}},\n\t\t\"noodle\":{{txtHTSoNha.text}},\n\t\t\"vegetable\": {{txtHTSoNha.text}},\n\t\t\"meat\": {{txtHTSoNha.text}}\n\t}\n}",
+      "body": "{\n\t\"address\": {\n\t\t\"city\":{{slHTThanhPho.selectedOptionLabel}},\n\t\t\"district\": {{slHTQuan.selectedOptionLabel}},\n\t\t\"ward\": {{slHTXa.selectedOptionLabel}},\n\t\t\"street\": {{txtHTDuong.text}}\n\t},\n\t\"donation\": {\n\t\t\"role\": {{slHTVaiTro.selectedOptionValue}},\n\t\t\"fullname\": {{txtHTTen.text}},\n\t\t\"email\": {{txtHTEmail.text}},\n\t\t\"phonenumber\": {{txtHTSDT.text}},\n\t\t\"cango\": {{slHTDi.selectedOptionValue}},\n\t\t\"mask\": {{txtHTKhauTrang.text}},\n\t\t\"rice\": {{txtHTGao.text}},\n\t\t\"noodle\":{{txtHTMi.text}},\n\t\t\"vegetable\": {{txtHTRau.text}},\n\t\t\"meat\": {{txtHTThit.text}}\n\t}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

@@ -1,10 +1,9 @@
 {
 	"address": {
-		"street_number": {{txtHTSoNha.text}},
-		"street": {{txtHTDuong.text}},
-		"ward": {{txtHTPhuong.text}},
-		"city": {{txtHTThanhPho.text}},
-		"district": {{txtHTQuan.text}}
+		"city":{{slHTThanhPho.selectedOptionLabel}},
+		"district": {{slHTQuan.selectedOptionLabel}},
+		"ward": {{slHTXa.selectedOptionLabel}},
+		"street": {{txtHTDuong.text}}
 	},
 	"donation": {
 		"role": {{slHTVaiTro.selectedOptionValue}},
@@ -12,10 +11,10 @@
 		"email": {{txtHTEmail.text}},
 		"phonenumber": {{txtHTSDT.text}},
 		"cango": {{slHTDi.selectedOptionValue}},
-		"mask": {{txtHTSoNha.text}},
-		"rice": {{txtHTSoNha.text}},
-		"noodle":{{txtHTSoNha.text}},
-		"vegetable": {{txtHTSoNha.text}},
-		"meat": {{txtHTSoNha.text}}
+		"mask": {{txtHTKhauTrang.text}},
+		"rice": {{txtHTGao.text}},
+		"noodle":{{txtHTMi.text}},
+		"vegetable": {{txtHTRau.text}},
+		"meat": {{txtHTThit.text}}
 	}
 }
