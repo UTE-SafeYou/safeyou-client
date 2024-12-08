@@ -1,2 +1,2 @@
 DELETE FROM public.assignment
-WHERE public.assignment.task_id = {{tbYourTask.selectedRow.task_id}};
+WHERE id = {{tbYourTask.selectedRow.assignment_id}};
