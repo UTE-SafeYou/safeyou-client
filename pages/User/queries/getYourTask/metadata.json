@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM public.assignment\nINNER JOIN public.task\nON public.task.id= public.assignment.task_id\nINNER JOIN public.volunteerprofiles\nON public.volunteerprofiles.id = public.assignment.volunteer_profile_id\nINNER JOIN public.address\nON public.address.address_id= public.task.address_id\nWHERE public.volunteerprofiles.user_id = {{appsmith.store.user_profile.id}}\n",
+      "body": "SELECT \n    a.id AS assignment_id, \n    t.title, \n    t.description, \n    t.task_status, \n    a.assigneddate\nFROM public.assignment a\nJOIN public.task t ON t.id = a.task_id\nJOIN public.volunteerprofiles vp ON vp.id = a.volunteer_profile_id\nWHERE vp.user_id = '{{appsmith.store.user_profile.id}}';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

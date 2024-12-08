@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 35,
   "boxShadow": "none",
   "buttonColor": "#f3e8ff",
   "buttonVariant": "PRIMARY",
@@ -44,7 +44,7 @@
   "rightColumn": 62,
   "text": "Trở thành Tình nguyện viên",
   "tooltip": "",
-  "topRow": 26,
+  "topRow": 28,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "89r09pd8k3",
