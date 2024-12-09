@@ -28,7 +28,7 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{registerObject.signUp();}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentColumnSpace": 10.4287109375,

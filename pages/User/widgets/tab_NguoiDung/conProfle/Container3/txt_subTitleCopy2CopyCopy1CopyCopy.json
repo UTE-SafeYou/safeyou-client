@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 6,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,35 +12,35 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
   "fontSize": "1.25rem",
-  "fontStyle": "",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
   "key": "nf5ngvo9vw",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.5,
-  "parentId": "a1hqvutjqa",
+  "parentId": "ozbhrc470o",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 36,
+  "rightColumn": 45,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Nơi bạn có thể trao đi tình thương để hỗ trợ người khác và nhận hỗ trợ từ cộng đồng.",
+  "text": "CÁC CẢNH BÁO ĐÃ NHẬN",
   "textAlign": "LEFT",
-  "textColor": "#fce7f3",
-  "topRow": 10,
+  "textColor": "#ec4899",
+  "topRow": 0,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "lg45pludbm",
-  "widgetName": "txt_subTitleCopy2CopyCopy"
+  "widgetId": "sf74t2zd30",
+  "widgetName": "txt_subTitleCopy2CopyCopy1CopyCopy"
 }
