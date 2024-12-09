@@ -1,0 +1,5 @@
+SELECT up.fullname, up.phone, a.street_number, a.street, a.ward, a.city, a.district
+FROM public.user_profiles up
+JOIN public.address a
+ON a.address_id = up.address_id
+WHERE up.user_id = {{appsmith.store.user_profile.id}};

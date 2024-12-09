@@ -24,23 +24,23 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 19.5,
-  "parentId": "a1hqvutjqa",
+  "parentId": "qontgy6ssi",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 36,
+  "rightColumn": 38,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Nơi bạn có thể trao đi tình thương để hỗ trợ người khác và nhận hỗ trợ từ cộng đồng.",
+  "text": "SafeU - Hãy đồng hành cùng chúng tôi để bảo vệ bạn và gia đình bạn.",
   "textAlign": "LEFT",
   "textColor": "#fce7f3",
-  "topRow": 10,
+  "topRow": 9,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "lg45pludbm",
-  "widgetName": "txt_subTitleCopy2CopyCopy"
+  "widgetId": "4qrdiz63ka",
+  "widgetName": "txt_subTitleCopy2CopyCopy1Copy"
 }
