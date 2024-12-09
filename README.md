@@ -16,9 +16,9 @@
     <br />
     <a href="https://olp-asm.huuloc.id.vn/app/safeyou-client/auth-67565341fd51167a0308db30?branch=master">Online demo</a>
     ·
-    [Báo cáo lỗi](https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=b%C3%A1o-c%C3%A1o-l%E1%BB%97i.md&title=)
+    <a href="https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=b%C3%A1o-c%C3%A1o-l%E1%BB%97i.md&title=">Báo cáo lỗi</a>
     ·
-   [Yêu cầu tính năng](https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=y%C3%AAu-c%E1%BA%A7u-t%C3%ADnh-n%C4%83ng.md&title=)
+    <a href="https://github.com/UTE-SafeYou/safeyou-client/issues/new?assignees=&labels=&projects=&template=y%C3%AAu-c%E1%BA%A7u-t%C3%ADnh-n%C4%83ng.md&title=">Yêu cầu tính năng</a>
   </p>
 </div>
 
