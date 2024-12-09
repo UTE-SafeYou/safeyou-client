@@ -1,0 +1,4 @@
+{
+	 "user_id": {{appsmith.store.user_profile.id}},
+    "skills": {{txtKyNang.text}} 
+}

@@ -1,9 +1,10 @@
-SELECT * 
-FROM public.assignment
-INNER JOIN public.task
-ON public.task.id= public.assignment.task_id
-INNER JOIN public.volunteerprofiles
-ON public.volunteerprofiles.id = public.assignment.volunteer_profile_id
-INNER JOIN public.address
-ON public.address.address_id= public.task.address_id
-WHERE public.volunteerprofiles.user_id = {{appsmith.store.user_profile.id}}
+SELECT 
+    a.id AS assignment_id, 
+    t.title, 
+    t.description, 
+    t.task_status, 
+    a.assigneddate
+FROM public.assignment a
+JOIN public.task t ON t.id = a.task_id
+JOIN public.volunteerprofiles vp ON vp.id = a.volunteer_profile_id
+WHERE vp.user_id = '{{appsmith.store.user_profile.id}}';

@@ -5,7 +5,7 @@ export default {
 		const check = token && !isJwtExpired(token);
 		if (!check) {
 			showAlert('Vui lòng đăng nhập lại!', 'error');
-			navigateTo("Login");
+			navigateTo("Auth");
 		}
 	}
 }

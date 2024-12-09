@@ -27,6 +27,6 @@
     "fullyQualifiedName": "selectedRowTbTask.tbTaskonRowSelected",
     "name": "tbTaskonRowSelected",
     "pageId": "User",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

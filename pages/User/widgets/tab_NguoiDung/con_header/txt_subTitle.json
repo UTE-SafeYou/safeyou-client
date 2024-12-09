@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 16,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -11,7 +11,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "Inter",
-  "fontSize": "1rem",
+  "fontSize": "1.25rem",
   "fontStyle": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -34,7 +34,7 @@
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Cập nhật các tin tức mới nhất về tình hình dịch bệnh, thiên tai trên cả nước.",
+  "text": "Cập nhật các tin tức mới nhất về tình hình dịch bệnh, thiên tai, khí hậu, môi trường mới nhất trên cả nước.",
   "textAlign": "LEFT",
   "textColor": "#fce7f3",
   "topRow": 11,
