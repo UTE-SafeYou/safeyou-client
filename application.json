@@ -25,6 +25,9 @@
       "isDefault": true
     },
     {
+      "isDefault": false
+    },
+    {
       "id": "Auth",
       "isDefault": false
     }
