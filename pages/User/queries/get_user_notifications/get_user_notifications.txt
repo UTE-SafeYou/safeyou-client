@@ -1,0 +1,4 @@
+SELECT n.title, n.content, n.type
+FROM public.notification_user nu
+JOIN public.notification n ON nu.notification_id = n.id
+WHERE nu.to_user_id = {{appsmith.store.user_profile.id}}

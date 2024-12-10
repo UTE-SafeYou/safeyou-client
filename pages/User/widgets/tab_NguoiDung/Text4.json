@@ -43,7 +43,7 @@
   "text": "GIỎ TỪ THIỆN CỦA BẠN",
   "textAlign": "LEFT",
   "textColor": "#ec4899",
-  "topRow": 39,
+  "topRow": 38,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
