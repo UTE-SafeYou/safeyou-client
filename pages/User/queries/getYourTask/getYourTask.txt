@@ -3,8 +3,13 @@ SELECT
     t.title, 
     t.description, 
     t.task_status, 
-    a.assigneddate
+    a.assigneddate,
+    ad.street,
+    ad.ward,
+    ad.city,
+    ad.district
 FROM public.assignment a
 JOIN public.task t ON t.id = a.task_id
 JOIN public.volunteerprofiles vp ON vp.id = a.volunteer_profile_id
+INNER JOIN public.address ad ON t.address_id = ad.address_id
 WHERE vp.user_id = '{{appsmith.store.user_profile.id}}';

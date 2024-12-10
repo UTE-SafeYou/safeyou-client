@@ -29,7 +29,7 @@
   "mobileTopRow": 40,
   "needsErrorInfo": false,
   "onChange": "{{jsRefeshVolunteer.refreshVolunteerChange();}}",
-  "originalBottomRow": 28,
+  "originalBottomRow": 26,
   "originalTopRow": 22,
   "parentColumnSpace": 19.1904296875,
   "parentId": "t5nnh1p72i",

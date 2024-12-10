@@ -1,7 +1,7 @@
 export default {
 	refreshVolunteerChange () {
 		if (refreshVolunteer.isSwitchedOn) {
-			setInterval(() => getAllTasks.run(), 1000, "autorefresh");
+			setInterval(() => getTasks.run(), 5000, "autorefresh");
 			clearInterval("autorefresh");
 		}
 	}

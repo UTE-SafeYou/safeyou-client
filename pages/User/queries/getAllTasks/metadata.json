@@ -38,7 +38,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "getAllTasks",
     "pageId": "User",
     "userSetOnLoad": false
