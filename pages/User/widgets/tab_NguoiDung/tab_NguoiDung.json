@@ -279,6 +279,51 @@
       "version": 1,
       "widgetId": "213ockluid",
       "widgetName": "Canvas121"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1370,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "x87hd4tqce",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1370,
+      "minWidth": 450,
+      "mobileBottomRow": 1371,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1248.1875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "uw59akhvr5",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1248.1875,
+      "tabId": "tabr9d3212035",
+      "tabName": "Hướng dẫn ứng phó",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "5x0vmqdkni",
+      "widgetName": "Canvas132"
     }
   ],
   "defaultTab": "{{Tabs1.selectedTab}}",
@@ -354,6 +399,13 @@
       "isVisible": true,
       "label": "Chợ tình thương",
       "widgetId": "94hz281wrw"
+    },
+    "tabr9d3212035": {
+      "id": "tabr9d3212035",
+      "index": 6,
+      "isVisible": true,
+      "label": "Hướng dẫn ứng phó",
+      "widgetId": "5x0vmqdkni"
     },
     "tabtv06yri39q": {
       "id": "tabtv06yri39q",

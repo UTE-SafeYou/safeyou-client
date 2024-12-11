@@ -47,7 +47,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onOptionChange": "{{getCommunes.run()}}",
+  "onOptionChange": "{{getHTCommunes.run()}}",
   "optionLabel": "name",
   "optionValue": "iddistrict",
   "originalBottomRow": 85,

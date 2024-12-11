@@ -10,7 +10,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 50,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 50,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 41,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -147,7 +147,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 41,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -192,7 +192,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 41,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -237,7 +237,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 41,
+      "bottomRow": 0,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -279,6 +279,51 @@
       "version": 1,
       "widgetId": "3olnrez1r0",
       "widgetName": "Canvas131"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 0,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "x87hd4tqce",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 40,
+      "minWidth": 450,
+      "mobileBottomRow": 41,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 726.1171875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hkzu0rsj5l",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 726.1171875,
+      "tabId": "tabt199djzus9",
+      "tabName": "Hướng dẫn ứng phó",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "qbj72xot0f",
+      "widgetName": "Canvas133"
     }
   ],
   "defaultTab": "Bảng tin",
@@ -300,7 +345,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ol9rkxhei4",
-  "leftColumn": 8,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 15,
   "minWidth": 450,
@@ -316,7 +361,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 63,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -331,7 +376,7 @@
     },
     "tab2": {
       "id": "tab2",
-      "index": 1,
+      "index": 2,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Bản đồ tương tác",
@@ -340,31 +385,43 @@
     },
     "tabb22pnfc8xj": {
       "id": "tabb22pnfc8xj",
-      "index": 2,
+      "index": 3,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Đóng góp thông tin",
       "widgetId": "8g45hs6lr4"
     },
     "tabcdbi5b308q": {
       "id": "tabcdbi5b308q",
-      "index": 5,
+      "index": 6,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Tài khoản của bạn",
       "widgetId": "3olnrez1r0"
     },
     "tabkwymzjno8c": {
       "id": "tabkwymzjno8c",
-      "index": 4,
+      "index": 5,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Tình nguyện",
       "widgetId": "7dzgc9s29o"
     },
     "tabp7wk3htv2j": {
       "id": "tabp7wk3htv2j",
-      "index": 3,
+      "index": 4,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Chợ tình thương",
       "widgetId": "cps51i8f90"
+    },
+    "tabt199djzus9": {
+      "id": "tabt199djzus9",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Hướng dẫn ứng phó",
+      "widgetId": "qbj72xot0f"
     }
   },
   "topRow": 2,

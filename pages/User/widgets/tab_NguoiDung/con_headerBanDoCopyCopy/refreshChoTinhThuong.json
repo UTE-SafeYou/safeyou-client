@@ -29,6 +29,8 @@
   "mobileTopRow": 40,
   "needsErrorInfo": false,
   "onChange": "{{jsRefreshChoTinhThuong.refreshChoTinhThuongonChange();}}",
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a1hqvutjqa",
   "parentRowSpace": 10,
