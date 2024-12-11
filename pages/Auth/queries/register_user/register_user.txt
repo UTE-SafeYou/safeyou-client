@@ -1,10 +1,10 @@
-{
-	"email": {{registerEmail.text}},
-	"password": {{registerPassword.text}},
-	"phone": {{registerPhone.text}},
-	"fullname": {{registerFullName.text}},
-	"street": {{txtDuong.text}},
-	"district": {{slQuan.selectedOptionLabel}},
-	"ward": {{slXa.selectedOptionLabel}},
-	"city": {{slThanhPho.selectedOptionLabel}}
-}
+{{{
+	"email": registerEmail.text,
+	"password": registerPassword.text,
+	"phone": registerPhone.text,
+	"fullname": registerFullName.text,
+	"street": txtDuong.text,
+	"district": slQuan.selectedOptionLabel,
+	"ward": slXa.selectedOptionLabel,
+	"city": slThanhPho.selectedOptionLabel
+}}}

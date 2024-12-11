@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"email\": {{registerEmail.text}},\n\t\"password\": {{registerPassword.text}},\n\t\"phone\": {{registerPhone.text}},\n\t\"fullname\": {{registerFullName.text}},\n\t\"street\": {{txtDuong.text}},\n\t\"district\": {{slQuan.selectedOptionLabel}},\n\t\"ward\": {{slXa.selectedOptionLabel}},\n\t\"city\": {{slThanhPho.selectedOptionLabel}}\n}",
+      "body": "{{{\n\t\"email\": registerEmail.text,\n\t\"password\": registerPassword.text,\n\t\"phone\": registerPhone.text,\n\t\"fullname\": registerFullName.text,\n\t\"street\": txtDuong.text,\n\t\"district\": slQuan.selectedOptionLabel,\n\t\"ward\": slXa.selectedOptionLabel,\n\t\"city\": slThanhPho.selectedOptionLabel\n}}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
