@@ -1,6 +1,11 @@
 export default {
 	async loginButtononClick () {
-		let response = await login_user.run();
+		let response = null;
+		try {
+			response = await login_user.run();
+		} catch(e) {
+			showAlert("Sai tài khoản hoặc mật khẩu", "error");
+		}
 
 		console.log(response);
 
