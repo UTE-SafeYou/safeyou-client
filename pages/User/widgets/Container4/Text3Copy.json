@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 88,
+  "bottomRow": 7,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,42 +11,45 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.25rem",
+  "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "rd6aah97bh",
-  "leftColumn": 23,
+  "key": "g553b1uv68",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 80,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 76,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 87,
-  "originalTopRow": 82,
+  "originalBottomRow": 7,
+  "originalTopRow": 2,
   "overflow": "NONE",
-  "parentColumnSpace": 17.3447265625,
-  "parentId": "a507wpbmqz",
+  "parentColumnSpace": 21.78125,
+  "parentId": "blmac5td1r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 7,
   "shouldTruncate": false,
-  "text": "SẮM NHIỆM VỤ TÌNH NGUYỆN Ở ĐÂY!",
-  "textAlign": "LEFT",
-  "textColor": "#ec4899",
-  "topRow": 83,
+  "text": "SafeU",
+  "textAlign": "CENTER",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "cyg6kuutc6",
-  "widgetName": "Text4Copy"
+  "widgetId": "dwx4jwrc8a",
+  "widgetName": "Text3Copy"
 }
