@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -19,23 +19,23 @@
   "isLoading": false,
   "isVisible": true,
   "key": "j0z4cpigeh",
-  "leftColumn": 9,
+  "leftColumn": 8,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentId": "1300rxcey9",
   "renderMode": "CANVAS",
-  "rightColumn": 62,
+  "rightColumn": 61,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Bản tin vừa cập nhật",
+  "text": "Gọi khẩn cấp để được cứu trợ",
   "textAlign": "LEFT",
   "textColor": "#fff",
-  "topRow": 2,
+  "topRow": 1,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,

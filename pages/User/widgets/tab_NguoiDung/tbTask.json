@@ -65,7 +65,7 @@
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndex": "1",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -175,12 +175,12 @@
   "mobileTopRow": 39,
   "needsErrorInfo": false,
   "onRowSelected": "",
-  "originalBottomRow": 121,
-  "originalTopRow": 88,
+  "originalBottomRow": 122,
+  "originalTopRow": 89,
   "parentColumnSpace": 19.1904296875,
   "parentId": "a507wpbmqz",
   "parentRowSpace": 10,
-  "primaryColumnId": "id",
+  "primaryColumnId": "title",
   "primaryColumns": {
     "address_id": {
       "alias": "address_id",

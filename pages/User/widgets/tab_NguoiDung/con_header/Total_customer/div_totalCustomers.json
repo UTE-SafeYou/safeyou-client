@@ -23,13 +23,13 @@
   "isLoading": false,
   "isVisible": true,
   "key": "fvfyiwgmtt",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "orientation": "horizontal",
   "parentColumnSpace": 19.8125,
   "parentId": "1300rxcey9",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 9,
+  "rightColumn": 6,
   "searchTags": [
     "line"
   ],

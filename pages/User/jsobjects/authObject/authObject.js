@@ -7,5 +7,10 @@ export default {
 			showAlert('Vui lòng đăng nhập lại!', 'error');
 			navigateTo("Auth");
 		}
+	},
+	logout: () => {
+		clearStore();
+		closeModal(Modal_DangXuat.name);
+		navigateTo("Auth");
 	}
 }
